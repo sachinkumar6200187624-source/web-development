@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpendSmart | Add Expense</title>
+<link rel="stylesheet" href="add-expense.css">
+</head>
+<body><div class="app-layout">
+<aside class="sidebar">
+<a aria-label="SpendSmart home" class="brand" href="#dashboard">
+<span class="brand-mark">$</span>
+<span>Spend<span class="brand-light">Smart</span></span>
+</a>
+<p class="menu-label">WORKSPACE</p>
+<nav aria-label="Main navigation" class="main-nav">
+<a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Dashboard</a>
+<a class="nav-link active" href="add-expense.html"><span class="nav-icon"></span> Add Expense</a>
+<a class="nav-link" href="history.html"><span class="nav-icon">◷</span> Expense History</a>
+<a class="nav-link" href="categories.html"><span class="nav-icon">◉</span> Categories</a>
+<a class="nav-link" href="profile.html"><span class="nav-icon">♙</span> User Profile</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="help-card">
+<span class="help-icon">✦</span>
+<strong>Small steps add up.</strong>
+<p>Keep track today, feel more confident tomorrow.</p>
+</div>
+<a class="nav-link" href="admin.html"><span class="nav-icon">⚙</span> Admin overview</a>
+<a class="nav-link" href="login.html"><span class="nav-icon">↪</span> Sign out</a>
+</div>
+</aside>
+<main class="main-content"><header class="topbar">
+<div class="topbar-left">
+<span class="mobile-brand">SpendSmart</span>
+<span class="breadcrumb">Workspace <span>/</span> Dashboard</span>
+</div>
+<div class="topbar-right">
+<a aria-label="View activity" class="icon-button" href="history.html">⌕</a>
+<a aria-label="Notifications" class="icon-button notification" href="history.html">♧</a>
+<div class="user-menu">
+<div class="avatar small-avatar">sk</div>
+<div class="user-menu-text"><strong>sumit kumar</strong><span>Personal account</span></div>
+<span class="chevron">⌄</span>
+</div>
+</div>
+</header>
+<section class="page-section secondary-section" id="add-expense">
+<div class="section-title-row"><div><p class="eyebrow">TRANSACTION MANAGEMENT</p><h1>Add a new expense</h1><p class="muted">Fill in the details to keep your spending organized.</p></div><span class="section-icon">＋</span></div>
+<div class="form-layout">
+<form action="#add-expense" class="panel expense-form">
+<div class="form-heading"><h2>Expense details</h2><p class="muted small">Fields marked with * are required.</p></div>
+<div class="form-grid">
+<label class="full-width">Expense title *<input placeholder="e.g. Grocery shopping" required="" type="text"/></label>
+<label>Category *<select required=""><option value="">Choose category</option><option>Food</option><option>Transport</option><option>Shopping</option><option>Bills</option><option>Others</option></select></label>
+<label>Amount (₹) *<input min="1" placeholder="0.00" required="" type="number"/></label>
+<label>Date *<input required="" type="date" value="2026-10-11"/></label>
+<label>Payment method<select><option>UPI</option><option>Cash</option><option>Debit card</option><option>Credit card</option><option>Bank transfer</option></select></label>
+<label class="full-width">Description<textarea placeholder="Add a short note (optional)" rows="3"></textarea></label>
+</div>
+<div class="form-buttons"><a class="secondary-button" href="#dashboard">Cancel</a><button class="primary-button" type="submit">Save expense</button></div>
+<p class="form-note">Demo form: HTML and CSS only. Saving data requires JavaScript and a backend.</p>
+</form>
+<aside class="tip-card">
+<div class="tip-illustration">₹<span>✓</span></div>
+<h3>Make every rupee count.</h3>
+<p>Adding expenses regularly helps you understand your habits and plan your next goal.</p>
+<div class="tip-stat"><span>Monthly budget</span><strong>₹20,000</strong></div>
+<div class="budget-track"><span></span></div>
+<p class="small muted">64% of your monthly budget used</p>
+</aside>
+</div>
+</section>
+<footer class="footer">
+<span>© 2026 SpendSmart</span>
+<span>Build better money habits, one day at a time.</span>
+</footer>
+</main></div></body></html>

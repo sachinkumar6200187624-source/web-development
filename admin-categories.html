@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpendSmart | Category Management</title>
+<link rel="stylesheet" href="admin-categories.css">
+</head>
+<body><div class="app-layout">
+<aside class="sidebar">
+<a class="brand" href="admin.html"><span class="brand-mark">$</span><span>Spend<span class="brand-light">Smart</span></span></a>
+<p class="menu-label">ADMIN PANEL</p><nav aria-label="Admin navigation" class="main-nav"><a class="nav-link " href="admin.html"><span class="nav-icon">▦</span> Admin Dashboard</a>
+<a class="nav-link " href="users.html"><span class="nav-icon">♙</span> User Management</a>
+<a class="nav-link " href="transactions.html"><span class="nav-icon">▤</span> Transactions</a>
+<a class="nav-link active" href="admin-categories.html"><span class="nav-icon">◉</span> Categories</a>
+<a class="nav-link " href="reports.html"><span class="nav-icon">▥</span> Reports & Analytics</a></nav>
+<div class="sidebar-bottom"><div class="help-card"><span class="help-icon">✦</span><strong>SpendSmart Admin</strong><p>Manage users, transactions and reports.</p></div>
+<a class="nav-link" href="dashboard.html"><span class="nav-icon">↗</span> Client side</a>
+<a class="nav-link" href="login.html"><span class="nav-icon">↪</span> Sign out</a></div>
+</aside>
+<main class="main-content"><header class="topbar"><div class="topbar-left"><span class="mobile-brand">SpendSmart</span><span class="breadcrumb">Admin <span>/</span> Categories</span></div>
+<div class="topbar-right"><div class="user-menu"><div class="avatar small-avatar">AD</div><div class="user-menu-text"><strong>Administrator</strong><span>Admin account</span></div></div></div></header>
+<section class="page-section admin-page"><div class="section-title-row"><div><p class="eyebrow">ADMINISTRATION</p><h1>Category <span class="text-purple">management.</span></h1><p class="muted">Organize the categories available to SpendSmart users.</p></div><span class="admin-badge">Admin view</span></div>
+<div class="admin-category-grid">
+<article class="panel category-admin-card"><span class="category-icon">🍔</span><div><h2>Food</h2><p class="muted small">Groceries, restaurants and snacks</p></div><span class="pill active-pill">Active</span></article>
+<article class="panel category-admin-card"><span class="category-icon">🚗</span><div><h2>Transport</h2><p class="muted small">Fuel, taxi and public transport</p></div><span class="pill active-pill">Active</span></article>
+<article class="panel category-admin-card"><span class="category-icon">🏠</span><div><h2>Housing</h2><p class="muted small">Rent, repairs and maintenance</p></div><span class="pill active-pill">Active</span></article>
+<article class="panel category-admin-card"><span class="category-icon">💊</span><div><h2>Healthcare</h2><p class="muted small">Medicine and medical expenses</p></div><span class="pill active-pill">Active</span></article>
+<article class="panel category-admin-card"><span class="category-icon">🎓</span><div><h2>Education</h2><p class="muted small">Fees, books and courses</p></div><span class="pill active-pill">Active</span></article>
+<article class="panel category-admin-card"><span class="category-icon">🎬</span><div><h2>Entertainment</h2><p class="muted small">Movies, games and subscriptions</p></div><span class="pill active-pill">Active</span></article>
+</div><article class="panel category-form"><h2>Add a category</h2><p class="muted small">Demo form for the admin interface.</p><form><label for="category-name">Category name</label><input id="category-name" type="text" placeholder="Enter category name"><label for="category-type">Category type</label><select id="category-type"><option>Expense</option><option>Income</option></select><button class="primary-button" type="button">＋ Add category</button></form></article>
+</section></main></div></body></html>

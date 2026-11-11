@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpendSmart | Admin Overview</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body><div class="app-layout">
+<aside class="sidebar">
+<a aria-label="SpendSmart home" class="brand" href="#dashboard">
+<span class="brand-mark">$</span>
+<span>Spend<span class="brand-light">Smart</span></span>
+</a>
+<p class="menu-label">WORKSPACE</p>
+<nav aria-label="Main navigation" class="main-nav">
+<a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Dashboard</a>
+<a class="nav-link" href="add-expense.html"><span class="nav-icon"></span> Add Expense</a>
+<a class="nav-link" href="history.html"><span class="nav-icon">◷</span> Expense History</a>
+<a class="nav-link" href="categories.html"><span class="nav-icon">◉</span> Categories</a>
+<a class="nav-link" href="profile.html"><span class="nav-icon">♙</span> User Profile</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="help-card">
+<span class="help-icon">✦</span>
+<strong>Small steps add up.</strong>
+<p>Keep track today, feel more confident tomorrow.</p>
+</div>
+<a class="nav-link active" href="admin.html"><span class="nav-icon">⚙</span> Admin overview</a>
+<a class="nav-link" href="login.html"><span class="nav-icon">↪</span> Sign out</a>
+</div>
+</aside>
+<main class="main-content"><header class="topbar">
+<div class="topbar-left">
+<span class="mobile-brand">SpendSmart</span>
+<span class="breadcrumb">Workspace <span>/</span> Dashboard</span>
+</div>
+<div class="topbar-right">
+<a aria-label="View activity" class="icon-button" href="history.html">⌕</a>
+<a aria-label="Notifications" class="icon-button notification" href="history.html">♧</a>
+<div class="user-menu">
+<div class="avatar small-avatar">sk</div>
+<div class="user-menu-text"><strong>sumit kumar</strong><span>Personal account</span></div>
+<span class="chevron">⌄</span>
+</div>
+</div>
+</header>
+<section class="page-section secondary-section" id="admin">
+<div class="welcome-row">
+<div><p class="eyebrow">ADMINISTRATION</p><h1>Admin <span class="text-purple">overview.</span></h1><p class="muted">A high-level view of users and platform activity.</p></div>
+<span class="admin-badge">Admin view</span>
+</div>
+<div class="summary-grid admin-summary-grid">
+<article class="summary-card"><div class="summary-top"><span class="summary-label">Total users</span><span class="metric-icon blue-icon">♙</span></div><p class="metric-value">1,245</p><p class="metric-note positive">↗ 12% <span>this month</span></p></article>
+<article class="summary-card"><div class="summary-top"><span class="summary-label">Total expenses</span><span class="metric-icon green-icon">₹</span></div><p class="metric-value">₹25,430</p><p class="metric-note positive">↗ 8.4% <span>this month</span></p></article>
+<article class="summary-card"><div class="summary-top"><span class="summary-label">Total income</span><span class="metric-icon purple-icon">↗</span></div><p class="metric-value">₹58,960</p><p class="metric-note positive">↗ 10.1% <span>this month</span></p></article>
+<article class="summary-card"><div class="summary-top"><span class="summary-label">Transactions</span><span class="metric-icon orange-icon">▤</span></div><p class="metric-value">3,245</p><p class="metric-note positive">↗ 6.8% <span>this month</span></p></article>
+</div>
+<div class="dashboard-grid admin-grid">
+<article class="panel spending-panel">
+<div class="panel-heading"><div><h2>Monthly overview</h2><p class="muted small">Income and expenses across the year</p></div><span class="select-look">2026⌄</span></div>
+<div class="chart-legend"><span><i class="legend-dot income-dot"></i> Income</span><span><i class="legend-dot expense-dot"></i> Expense</span></div>
+<div aria-label="Illustrative monthly income and expense chart" class="bar-chart admin-chart">
+<div class="chart-y-labels"><span>40K</span><span>30K</span><span>20K</span><span>10K</span><span>0</span></div>
+<div class="chart-plot">
+<div class="chart-grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="bar-group"><div class="bar income-bar" style="height:58%"></div><div class="bar expense-bar" style="height:47%"></div><span>Jan</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:52%"></div><div class="bar expense-bar" style="height:62%"></div><span>Feb</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:72%"></div><div class="bar expense-bar" style="height:54%"></div><span>Mar</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:81%"></div><div class="bar expense-bar" style="height:68%"></div><span>Apr</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:49%"></div><div class="bar expense-bar" style="height:44%"></div><span>May</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:88%"></div><div class="bar expense-bar" style="height:59%"></div><span>Jun</span></div>
+</div>
+</div>
+</article>
+<article class="panel admin-actions">
+<div class="panel-heading"><div><h2>Quick actions</h2><p class="muted small">Manage the platform</p></div></div>
+<a class="admin-action blue-action" href="users.html">♙ <span>Manage users</span> →</a>
+<a class="admin-action green-action" href="reports.html">▤ <span>View reports</span> →</a>
+<a class="admin-action purple-action-bg" href="admin-categories.html">◉ <span>Manage categories</span> →</a>
+<a class="admin-action orange-action-bg" href="transactions.html">▤ <span>Manage transactions</span> →</a>
+</article>
+</div>
+<div class="lower-grid admin-lower-grid">
+<article class="panel transactions-panel" id="manage-users">
+<div class="panel-heading"><div><h2>Manage users</h2><p class="muted small">Example user account list</p></div><a class="text-link" href="users.html">View all ↗</a></div>
+<div class="table-scroll"><table>
+<thead><tr><th>Name</th><th>Email</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>John Doe</td><td>john@email.com</td><td><span class="pill active-pill">Active</span></td><td><a aria-label="Edit John Doe" class="table-action" href="#manage-users">✎</a></td></tr>
+<tr><td>Jane Smith</td><td>jane@email.com</td><td><span class="pill active-pill">Active</span></td><td><a aria-label="Edit Jane Smith" class="table-action" href="#manage-users">✎</a></td></tr>
+<tr><td>Michael Lee</td><td>michael@email.com</td><td><span class="pill inactive-pill">Inactive</span></td><td><a aria-label="Edit Michael Lee" class="table-action" href="#manage-users">✎</a></td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="panel reports-panel" id="reports">
+<div class="panel-heading"><div><h2>Reports</h2><p class="muted small">Example downloadable report list</p></div></div>
+<a class="report-row" href="#reports"><span><strong>Monthly report</strong><small>PDF summary</small></span><span class="download-link">Download ↓</span></a>
+<a class="report-row" href="#reports"><span><strong>User activity report</strong><small>Account activity</small></span><span class="download-link">Download ↓</span></a>
+<a class="report-row" href="#reports"><span><strong>Transaction report</strong><small>Expense and income</small></span><span class="download-link">Download ↓</span></a>
+<a class="report-row" href="#reports"><span><strong>Category report</strong><small>Spending categories</small></span><span class="download-link">Download ↓</span></a>
+</article>
+</div>
+<div class="notice-bar"><span>ⓘ</span> This is a front-end sample. Real user management, authentication, reports and saved transactions need JavaScript and a backend.</div>
+</section>
+<footer class="footer">
+<span>© 2026 SpendSmart</span>
+<span>Build better money habits, one day at a time.</span>
+</footer>
+</main></div></body></html>

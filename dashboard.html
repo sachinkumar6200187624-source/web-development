@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpendSmart | Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body><div class="app-layout">
+<aside class="sidebar">
+<a aria-label="SpendSmart home" class="brand" href="#dashboard">
+<span class="brand-mark">$</span>
+<span>Spend<span class="brand-light">Smart</span></span>
+</a>
+<p class="menu-label">WORKSPACE</p>
+<nav aria-label="Main navigation" class="main-nav">
+<a class="nav-link active" href="dashboard.html"><span class="nav-icon">▦</span> Dashboard</a>
+<a class="nav-link" href="add-expense.html"><span class="nav-icon"></span> Add Expense</a>
+<a class="nav-link" href="history.html"><span class="nav-icon">◷</span> Expense History</a>
+<a class="nav-link" href="categories.html"><span class="nav-icon">◉</span> Categories</a>
+<a class="nav-link" href="profile.html"><span class="nav-icon">♙</span> User Profile</a>
+</nav>
+<div class="sidebar-bottom">
+<div class="help-card">
+<span class="help-icon">✦</span>
+<strong>Small steps add up.</strong>
+<p>Keep track today, feel more confident tomorrow.</p>
+</div>
+<a class="nav-link" href="admin.html"><span class="nav-icon">⚙</span> Admin overview</a>
+<a class="nav-link" href="login.html"><span class="nav-icon">↪</span> Sign out</a>
+</div>
+</aside>
+<main class="main-content"><header class="topbar">
+<div class="topbar-left">
+<span class="mobile-brand">SpendSmart</span>
+<span class="breadcrumb">Workspace <span>/</span> Dashboard</span>
+</div>
+<div class="topbar-right">
+<a aria-label="View activity" class="icon-button" href="history.html">⌕</a>
+<a aria-label="Notifications" class="icon-button notification" href="history.html">♧</a>
+<div class="user-menu">
+<div class="avatar small-avatar">sk</div>
+<div class="user-menu-text"><strong>sumit kumar</strong><span>Personal account</span></div>
+<span class="chevron">⌄</span>
+</div>
+</div>
+</header>
+<section class="page-section" id="dashboard">
+<div class="welcome-row">
+<div>
+<p class="eyebrow">SUNDAY, OCTOBER 11, 2026</p>
+<h1>Your money, <span class="text-purple">made clearer.</span></h1>
+<p class="muted">Here is a quick look at your personal finances.</p>
+</div>
+<a class="primary-button" href="#add-expense"><span>＋</span> Add expense</a>
+</div>
+<div class="summary-grid">
+<article class="summary-card">
+<div class="summary-top"><span class="summary-label">Total balance</span><span class="metric-icon purple-icon">↗</span></div>
+<p class="metric-value">₹42,250.00</p>
+<p class="metric-note positive">↗ 8.2% <span>compared to last month</span></p>
+<div class="mini-line purple-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</article>
+<article class="summary-card">
+<div class="summary-top"><span class="summary-label">Monthly income</span><span class="metric-icon green-icon">↙</span></div>
+<p class="metric-value">₹35,500.00</p>
+<p class="metric-note positive">↗ 5.4% <span>compared to last month</span></p>
+<div class="mini-line green-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</article>
+<article class="summary-card">
+<div class="summary-top"><span class="summary-label">Monthly expenses</span><span class="metric-icon orange-icon">↗</span></div>
+<p class="metric-value">₹12,850.00</p>
+<p class="metric-note negative">↗ 2.1% <span>compared to last month</span></p>
+<div class="mini-line orange-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</article>
+<article class="summary-card">
+<div class="summary-top"><span class="summary-label">Savings this month</span><span class="metric-icon blue-icon">◇</span></div>
+<p class="metric-value">₹22,650.00</p>
+<p class="metric-note positive">↗ 12.8% <span>compared to last month</span></p>
+<div class="mini-line blue-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</article>
+</div>
+<div class="dashboard-grid">
+<article class="panel spending-panel">
+<div class="panel-heading">
+<div><h2>Income vs. expenses</h2><p class="muted small">Your money movement over six months</p></div>
+<span class="select-look">Last 6 months⌄</span>
+</div>
+<div class="chart-legend"><span><i class="legend-dot income-dot"></i> Income</span><span><i class="legend-dot expense-dot"></i> Expenses</span></div>
+<div aria-label="Illustrative bar chart comparing monthly income and expenses" class="bar-chart">
+<div class="chart-y-labels"><span>₹40k</span><span>₹30k</span><span>₹20k</span><span>₹10k</span><span>₹0</span></div>
+<div class="chart-plot">
+<div class="chart-grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="bar-group"><div class="bar income-bar" style="height:58%"></div><div class="bar expense-bar" style="height:36%"></div><span>May</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:70%"></div><div class="bar expense-bar" style="height:42%"></div><span>Jun</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:63%"></div><div class="bar expense-bar" style="height:32%"></div><span>Jul</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:82%"></div><div class="bar expense-bar" style="height:48%"></div><span>Aug</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:68%"></div><div class="bar expense-bar" style="height:38%"></div><span>Sep</span></div>
+<div class="bar-group"><div class="bar income-bar" style="height:91%"></div><div class="bar expense-bar" style="height:43%"></div><span>Oct</span></div>
+</div>
+</div>
+</article>
+
+</div>
+<div class="lower-grid">
+
+<article class="panel quick-panel">
+<div class="panel-heading"><div><h2>Quick actions</h2><p class="muted small">Jump to what you need</p></div></div>
+<a class="quick-action purple-action" href="#add-expense"><span>＋</span><span><strong>Add an expense</strong><small>Record a new transaction</small></span><b>→</b></a>
+<a class="quick-action green-action" href="#history"><span>↗</span><span><strong>Review spending</strong><small>Check your recent activity</small></span><b>→</b></a>
+<a class="quick-action orange-action" href="#profile"><span>♙</span><span><strong>Update profile</strong><small>Keep your details current</small></span><b>→</b></a>
+</article>
+</div>
+</section>
+<footer class="footer">
+<span>© 2026 SpendSmart</span>
+<span>Build better money habits, one day at a time.</span>
+</footer>
+</main></div></body></html>

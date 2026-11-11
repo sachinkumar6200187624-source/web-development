@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpendSmart | Transaction Management</title>
+<link rel="stylesheet" href="transactions.css">
+</head>
+<body><div class="app-layout">
+<aside class="sidebar">
+<a class="brand" href="admin.html"><span class="brand-mark">$</span><span>Spend<span class="brand-light">Smart</span></span></a>
+<p class="menu-label">ADMIN PANEL</p><nav aria-label="Admin navigation" class="main-nav"><a class="nav-link " href="admin.html"><span class="nav-icon">▦</span> Admin Dashboard</a>
+<a class="nav-link " href="users.html"><span class="nav-icon">♙</span> User Management</a>
+<a class="nav-link active" href="transactions.html"><span class="nav-icon">▤</span> Transactions</a>
+<a class="nav-link " href="admin-categories.html"><span class="nav-icon">◉</span> Categories</a>
+<a class="nav-link " href="reports.html"><span class="nav-icon">▥</span> Reports & Analytics</a></nav>
+<div class="sidebar-bottom"><div class="help-card"><span class="help-icon">✦</span><strong>SpendSmart Admin</strong><p>Manage users, transactions and reports.</p></div>
+<a class="nav-link" href="dashboard.html"><span class="nav-icon">↗</span> Client side</a>
+<a class="nav-link" href="login.html"><span class="nav-icon">↪</span> Sign out</a></div>
+</aside>
+<main class="main-content"><header class="topbar"><div class="topbar-left"><span class="mobile-brand">SpendSmart</span><span class="breadcrumb">Admin <span>/</span> Transactions</span></div>
+<div class="topbar-right"><div class="user-menu"><div class="avatar small-avatar">AD</div><div class="user-menu-text"><strong>Administrator</strong><span>Admin account</span></div></div></div></header>
+<section class="page-section admin-page"><div class="section-title-row"><div><p class="eyebrow">ADMINISTRATION</p><h1>Transaction <span class="text-purple">management.</span></h1><p class="muted">Review income and expense records added by users.</p></div><span class="admin-badge">Admin view</span></div>
+<div class="admin-stats"><article class="summary-card"><span class="summary-label">Total transactions</span><p class="metric-value">3,245</p></article><article class="summary-card"><span class="summary-label">Total expenses</span><p class="metric-value">₹25,430</p></article><article class="summary-card"><span class="summary-label">Total income</span><p class="metric-value">₹58,960</p></article></div>
+<article class="panel admin-table-panel"><div class="panel-heading"><div><h2>All transactions</h2><p class="muted small">Recent user transaction records</p></div><select class="admin-search"><option>All transactions</option><option>Income</option><option>Expense</option></select></div><div class="table-scroll"><table><thead><tr><th>Transaction ID</th><th>User</th><th>Description</th><th>Date</th><th>Type</th><th>Amount</th></tr></thead><tbody>
+<tr><td>#TR-1001</td><td>sumit kumar</td><td>Groceries</td><td>08 Nov 2026</td><td><span class="pill inactive-pill">Expense</span></td><td>₹2,500</td></tr>
+<tr><td>#TR-1002</td><td>Jane Smith</td><td>Monthly salary</td><td>07 Nov 2026</td><td><span class="pill active-pill">Income</span></td><td>₹35,000</td></tr>
+<tr><td>#TR-1003</td><td>Michael Lee</td><td>Electricity bill</td><td>06 Nov 2026</td><td><span class="pill inactive-pill">Expense</span></td><td>₹1,800</td></tr>
+<tr><td>#TR-1004</td><td>Priya Patel</td><td>Freelance work</td><td>05 Nov 2026</ td><td><span class="pill active-pill">Income</span></ td>< td>₹8,000</ td></ tr>
+</tbody></table></div></article>
+</section></main></div></body></html>
